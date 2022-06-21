@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Uno</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/Diccionario.js"></script>
+	<script type="text/javascript" src="js/Util.js"></script>
+</head>
+<body>
+
+	<section class="content-inicio" id="content-inicio" style="display: ;">
+		<div class="content-menu">
+			<input type="text" class="caja" id="caja-jugadores" placeholder="Cantidad de jugadores">
+			<input type="text" class="caja" id="caja-nombre" placeholder="Nombre">
+			<button class="btn" id="btn-jugar">CREAR</button>
+			<button class="btn" id="btn-unirse">UNIRSE</button>
+		</div>
+	</section>
+
+	<template id="template-tablero">
+		<div id="tablero">
+			<div class="num_cartas" id="num_cartas"></div>
+			<div id="cartas"></div>
+		</div>
+	</template>
+
+	<template id="template-carta">
+		<div class="carta" id="carta">
+			<div class="num1" id="num1"></div>
+			<div class="centro" id="centro">
+				<div class="num3" id="num3"></div>
+			</div>
+			<div class="num2" id="num2"></div>
+		</div>
+	</template>
+
+	<section class="content-juego" id="content-juego" style="display: none;">
+		<div id="content-monto"></div>
+		<div id="content-jugada"></div>
+		<div class="content-turno" id="content-turno"></div>
+	</section>
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/App.js"></script>
+
+</body>
+</html>
