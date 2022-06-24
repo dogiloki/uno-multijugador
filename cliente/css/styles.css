@@ -3,6 +3,9 @@
 	margin: 0px;
 	font-family: arial;
 	box-sizing: content-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 body{
 	background-image: url("../img/fondo.png");
